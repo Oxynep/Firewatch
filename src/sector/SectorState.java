@@ -10,7 +10,7 @@ public enum SectorState {
     private static final String GRAY = "\u001B[90m";
     public final String label;
 
-    private SectorState(String label) {
+    SectorState(String label) {
         this.label = label;
     }
 

@@ -14,12 +14,11 @@ import java.util.stream.IntStream;
 public class Main {
 
     private static final String CONFIG_PATH = "./params/config.json";
-
+    private static final List<List<Integer>> initialFire = new ArrayList<>();
     // X_SIZE -> l ; Y_SIZE -> h ; NB_MAX_STEP -> to limit infinite loop ; CHANCE_TO_IGNITE -> from 0 to 1
     private static int X_SIZE, Y_SIZE, NB_MAX_STEP;
     private static double CHANCE_TO_IGNITE;
     private static List<SectorInterface> sectorInFires = new ArrayList<>();
-    private static List<List<Integer>> initialFire = new ArrayList<>();
     private static List<List<SectorInterface>> forest;
 
     public static void main(String[] args) {
@@ -39,7 +38,7 @@ public class Main {
     }
 
     /**
-     * print state label of the entire forest
+     * print state label of the entire forest (for debug)
      *
      * @param forest the forest
      */
